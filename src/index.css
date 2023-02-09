@@ -1,13 +1,181 @@
+:root {
+  --fondo: #20232a;
+  --pinky: #e0bfb8;
+  --text: #c4afab;
+  --text-dark: #9c8782;
+  --active: #ffe4de;
+}
+
+html {
+  height: 100%;
+  background-color: var(--fondo);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  padding-bottom: 6.74rem;
+  position: relative;
+  background-color: var(--fondo) !important;
+}
+
+footer {
+  background-color: var(--fondo);
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  height: 10%;
+  /* height: 80px; */
+  display: flex;
+  justify-content: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 50vw;
+}
+
+.logo {
+  width: 50px;
+  /* height:70%; */
+  object-fit: cover;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+.carousel-container {
+  margin-top: 60px;
+
+  display: flex;
+  align-content: center;
+}
+.carousel {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.carousel-item {
+  width: 80vw !important;
+  height: 50vh;
+  margin: 0 auto;
+}
+.carousel-img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+
+  /* height: 700px !important; */
+}
+
+h3 .pinky:hover{
+  color: var(--text-dark) !important;
+}
+
+
+.pinky {
+  color: var(--pinky);
+  text-decoration: none;
+}
+
+.form-container {
+  width: 90%vw;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 400px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.col {
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .col {
+    text-align: left;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--text-dark) !important;
+  /* background-color: var(--fondo); */
+}
+.active {
+  color: var(--active) !important;
+  text-decoration: none;
+}
+.nav-link.active {
+  background-color: var(--fondo) !important;
+  color: var(--active);
+}
+.avatar {
+  width: 70px;
+  border-radius: 40px;
+}
+
+.nav-tabs {
+  justify-content: center;
+  align-items: end;
+}
+.pad3 {
+  padding-top: 30px;
+}
+
+.btn-cus{
+  color: var(--fondo) !important;
+  background-color: var(--text-dark) !important;
+  border: 0 !important;
+}
+
+.btn-cus:hover {
+  color: var(--fondo) !important;
+  background-color: var(--pinky) !important;
+  text-decoration: none;
+  border: 0 !important;
 }
