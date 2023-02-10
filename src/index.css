@@ -4,6 +4,7 @@
   --text: #c4afab;
   --text-dark: #9c8782;
   --active: #ffe4de;
+  height: 100%;
 }
 
 html {
@@ -20,7 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: 100%;
   padding-bottom: 6.74rem;
   position: relative;
   background-color: var(--fondo) !important;
@@ -29,7 +30,7 @@ body {
 footer {
   background-color: var(--fondo);
   margin-top: auto;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   text-align: center;
@@ -57,7 +58,12 @@ code {
   align-content: center;
   width: 50vw;
 }
-
+/* .App{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+} */
 .logo {
   width: 50px;
   /* height:70%; */
