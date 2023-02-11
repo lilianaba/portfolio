@@ -8,7 +8,7 @@ const Portfolio = () => {
       id: "1",
       name: "Jewelry eCommerce",
       description: "React, GraphQL, Node.js, Express.js, MongoDB",
-      deployedLink: "https://lilianaba.github.io/dayworkscheduler/",
+      deployedLink: "https://commingsoon",
       githubLink: "https://github.com/lilianaba/jewellery-e-commerce",
       image: "1",
     },
@@ -77,7 +77,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <div className="portfolio pinky pad3">
+      <div className="portfolio pinky">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

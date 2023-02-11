@@ -54,7 +54,7 @@ const Contact = () => {
         <Row className="pad3">
           <Col>
             <div className="pinky">
-              <h1>Contact Me</h1>
+              <h1 className="fw-bold">Contact Me</h1>
             </div>
           </Col>
           <Col xs={9}>

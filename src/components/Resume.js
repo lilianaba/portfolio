@@ -13,88 +13,124 @@ const Resume = () => {
     {
       id: "1",
       name: "HTML",
-      icon: "fa fa-angle-double-right",
+      icon: "fas fa-laptop-code",
     },
      {
       id: "2",
       name: "CSS",
-      icon: " fa fa-angle-double-right",
+      icon: "far fa-file-code",
     },
     {
       id: "3",
       name: "JavaScript",
-      icon: "fa fa-angle-double-right",
+      icon: "fab fa-js",
     },
     {
       id: "4",
       name: "API",
-      icon: "fa fa-angle-double-right",
+      icon: "fas fa-cog",
     },
-    {
-      id: "5",
-      name: "3rd Party API",
-      icon: " fa fa-angle-double-right",
-    },
+    // {
+    //   id: "5",
+    //   name: "3rd Party API",
+    //   icon: "fas fa-barcode",
+    // },
     {
       id: "6",
-      name: "Mysql Database",
-      icon: "fa fa-angle-double-right",
+      name: "Mysql",
+      icon: "fas fa-database",
     },
     {
       id: "7",
       name: "Node.js",
-      icon: "fa fa-angle-double-right",
+      icon: "fab fa-node-js",
     },
      {
       id: "8",
-      name: "NoSQL Database",
-      icon: " fa fa-angle-double-right",
+      name: "NoSQL",
+      icon: "fas fa-database",
     },
     {
-      id: "9",
-      name: "Progressive",
-      icon: "fa fa-angle-double-right",
+      id:"15",
+      name:"PWA",
+      icon:"fas fa-download",
+    
     },
     {
       id: "10",
       name: "React",
-      icon: "fa fa-angle-double-right",
+      icon: "fab fa-react",
     },
     {
       id: "11",
-      name: "MERN",
-      icon: " fa fa-angle-double-right",
+      name: "MongoDB",
+      icon: "far fa-folder-open",
     },
     {
       id: "12",
       name:"GitHub",
-      icon:"fa-brands fa-github",
+      icon:"fab fa-github",
     },
     {
       id:"13",
       name:"Branches",
-      icon:"fa-sharp fa-solid fa-merge",
+      icon:"fas fa-project-diagram",
 
-    }
+    },
+
+    {
+      id:"14",
+      name:"Express",
+      icon:"fas fa-shipping-fast",
     
+    },
+    {
+      id: "9",
+      name: "Progressive",
+      icon: "fas fa-spinner",
+    },
+
+    {
+      id:"15",
+      name:"Debugging",
+      icon:"fas fa-bug" //-slash",
+    
+    },
+    {
+      id:"16",
+      name:"Heroku",
+      icon:"fas fa-heading" //-slash",
+    
+    }, 
+    {
+      id:"17",
+      name:"Responsive",
+      icon:"fas fa-tablet-alt",
+    
+    },
+    
+
+   
+
  ]
     
 
     return (
     // <div>
-    <Container fluid>  
-        <h3 className='pinky pad3'>Resume</h3>
-        <h6 className='pinky'>
+    <Container>  
+        <h1 className='pinky pad3 fw-bold'>Resume</h1>
+        <h3 className='pinky'>
           Print or download my{' '}
-          <a  className ="pinky" href="#resumePDF" onClick={handleClick}>
+          <a  className ="pinky fst-italic" href="#resumePDF" onClick={handleClick}>
             resume
           </a>
-        </h6>
+        </h3>
   
         {showPDF ? (
-        <Row className='skillList' md={3} sm={2} lg={5}>
+        <Row className='skillList' md="auto"> 
+        {/* //md={3} sm={2} lg={5}> */}
             {skills.map((skill) => (
-        <Col>
+        <Col className='skill'>
           <div className='d-flex  pinky'> <i className= {`${skill.icon} px-2`}  ></i> <p> {skill.name}</p></div>
         </Col>))}
       </Row>):(
