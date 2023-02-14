@@ -10,7 +10,7 @@ import Project from './components/Project';
 import Resume from './components/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Carousel from 'react-bootstrap/Carousel';
-
+import { useEffect } from 'react';
 
 function App() {
   const [currentPage,setCurrentPage]=useState('About')
@@ -31,6 +31,23 @@ function App() {
   }
 
   const handlePageChange = (page) =>  setCurrentPage(page);
+ 
+ 
+  useEffect(() => {
+    
+    const handleResize = () => {
+      const screenWidth  = window.innerWidth
+      
+      if(screenWidth < 520 ) {
+        document.title = "LB";
+        console.log(screenWidth)
+      }else{document.title = "Liliana Bazand Portfolio"}
+   
+      
+      
+  }
+    window.addEventListener("resize", handleResize)
+  })
 
 
 
@@ -41,6 +58,8 @@ function App() {
       <Footer/>
     </div>
   );
+
+
 }
 
 export default App;

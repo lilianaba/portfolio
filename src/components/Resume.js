@@ -93,7 +93,7 @@ const Resume = () => {
     {
       id:"15",
       name:"Debugging",
-      icon:"fas fa-bug" //-slash",
+      icon:"fa-solid fa-bug-slash",
     
     },
     {
