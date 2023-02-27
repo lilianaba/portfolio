@@ -42,10 +42,10 @@ body {
 
 footer {
   background-color: var(--fondo);
-  margin-top: 40px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-top:auto;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 0; */
   text-align: center;
   right: 0;
   padding-bottom: 40px;
@@ -74,12 +74,13 @@ code {
   align-content: center;
   width: 50vw;
 }
-/* .App{
+.App{
   height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-} */
+  /* justify-content: flex-end; */
+}
 .logo {
   width: 50px;
   /* height:70%; */
