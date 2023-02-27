@@ -6,9 +6,9 @@ const Portfolio = () => {
   const projects = [
     {
       id: "1",
-      name: "Jewelry eCommerce",
+      name: "Bellagio Jewelry eCommerce",
       description: "React, GraphQL, Node.js, Express.js, MongoDB",
-      deployedLink: "https://commingsoon",
+      deployedLink: "https://quiet-caverns-07213.herokuapp.com/",
       githubLink: "https://github.com/lilianaba/jewellery-e-commerce",
       image: "1",
     },
