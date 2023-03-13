@@ -143,6 +143,7 @@ h3 .pinky:hover{
 .row {
   display: flex;
   flex-direction: row;
+  padding-left: 10px;
 }
 @media (max-width: 400px) {
   .row {
@@ -241,4 +242,24 @@ a:active {
 }
 .skill{
   padding: 10px;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.name{
+  text-align: center;
+  vertical-align: center;
+}
+.owner{
+  flex: 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.owner h1{
+  margin: 0;
 }

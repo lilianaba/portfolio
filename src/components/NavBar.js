@@ -10,7 +10,7 @@ function NavBar({ currentPage, handlePageChange }) {
     <div>
       <Container fluid>
         <Row>
-          <Col xs={1}>
+          {/* <Col xs={1}>
             <a href="https://github.com/lilianaba">
               <img
                 className="avatar"
@@ -18,7 +18,24 @@ function NavBar({ currentPage, handlePageChange }) {
                 alt="me-avatar"
               />
             </a>
+          </Col> */}
+ <Col className="title">
+<Col xs={1}>
+            <a href="https://github.com/lilianaba">
+              <img
+                className="avatar"
+                src={require(`../Assets/images/me1.png`)}
+                alt="me-avatar"
+              />
+            </a>
+            </Col>
+            <Col className="owner">
+            <h1 className="pinky name">Liliana Bazand</h1>
+            </Col>
           </Col>
+          </Row>
+          <Row>
+
           <Col className="d-grid">
             <ul className="nav nav-tabs">
               <li className="nav-item ">
